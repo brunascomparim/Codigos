@@ -1,0 +1,20 @@
+aperte F7 para colocar o codigo:
+
+private void StrReverse(ref string valor)
+{
+    Array letras = valor.ToArray();
+    Array.Reverse(letras);
+    valor = string.Empty;
+    foreach (char letra in letras)
+        valor += letra.ToString();
+}
+
+volte ao form e de um duplo clique no botão
+para colocar o código do botão:
+
+private void button1_Click(object sender, EventArgs e)
+{
+    string texto = textBox1.Text.Trim();
+    this.StrReverse(ref texto);
+    textBox2.Text = texto;
+}

@@ -1,0 +1,19 @@
+using System;
+using System.Windows;
+using System.Linq;
+using static System.Console;
+
+namespace Texto_Invertido
+{
+    public class Program{
+
+        public static void Main (string[] args)
+        {
+            string texto = "BRUNA SCOMPARIM";
+            WriteLine($"Texto Normal   : {texto}");
+            string textoInvertido = new string(texto.Reverse().ToArray());
+            WriteLine($"Texto Invertido: {textoInvertido}");
+            ReadLine();
+        }
+    }
+}
